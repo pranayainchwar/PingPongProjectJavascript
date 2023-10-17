@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    body {
+    }
+    #gamebox {
+      width: 100vw;
+      height: 100vh;
+      background-color: #000;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    #userscore,
+    #aiscore {
+      color: rgb(255, 255, 255);
+      font-size: 50px;
+      position: absolute;
+      top: 12px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    #userscore {
+      left: 40%;
+    }
+    #aiscore {
+      right: 40%;
+    }
+
+    .dashedlineverticle {
+      border-left: 5px dashed rgb(66, 66, 66);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 1px;
+      height: 100%;
+      transform: translateX(-50%);
+    }
+
+    #userpaddle {
+      width: 20px;
+      background-color: white;
+      height: 100px;
+      position: absolute;
+      left: 5px;
+      border-radius: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #aipaddle {
+      width: 20px;
+      background-color: rgb(255, 97, 97);
+      height: 100px;
+      position: absolute;
+      right: 5px;
+      border-radius: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    #ball {
+      background-color: rgb(0, 170, 208);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  </style>
+  <body>
+    <div id="gamebox">
+      <div class="scoreboard">
+        <div id="userscore">0</div>
+        <div id="aiscore">0</div>
+      </div>
+
+      <div class="dashedlineverticle"></div>
+      <div id="userpaddle"></div>
+      <div id="aipaddle"></div>
+      <div id="ball"></div>
+    </div>
+  </body>
+  <script src="/javascript.js"></script>
+</html>

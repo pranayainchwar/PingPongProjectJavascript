@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "C:/Users/acer/OneDrive/Desktop/git courese pull/JS_Pong-main"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.port": 5502,
+    "liveServer.settings.multiRootWorkspaceName": "PingPongProjectJavascript"
+  }
+}
